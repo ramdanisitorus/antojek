@@ -8,7 +8,7 @@ echo "\033[33;1m         #K125        \n";
 echo "\033[33;1m TUKANG TEMBAK BANYAK DOSA \n";
 echo "\n";
 nope:
-echo "\033[32;1m[?] Masukkan Nomor HP ang Belum Terdaftar Di Gojek : ";
+echo "\033[32;1m[?] Masukkan Nomor HP kau yang fresh : ";
 $nope = trim(fgets(STDIN));
 $cek = cekno($nope);
 if ($cek == false)
@@ -18,7 +18,7 @@ if ($cek == false)
     }
   else
     {
-echo "\033[31;1m[!] Siapkan OTPmu JANGAN LUPA SUBREK YT BAYU MAVLOG\n";
+echo "\033[31;1m[!] Siapkan OTPmu jangan lambat\n";
 sleep(5);
 $register = register($nope);
 if ($register == false)
@@ -28,7 +28,7 @@ if ($register == false)
   else
     {
     otp:
-    echo "\033[33;1m [!] Masukkan Kode Verifikasi (OTP) : ";
+    echo "\033[33;1m [!] Masukkan Kode OTP -Copat : ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
     if ($verif == false)
